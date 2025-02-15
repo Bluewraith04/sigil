@@ -1,9 +1,10 @@
 from .node import Node
+from .init import Zeros
 import numpy as np
 
 
 class Variable(Node):
-    def __init__(self, name=None, shape=(), initializer=None, trainable=True, dtype=np.float64):
+    def __init__(self, name=None, shape=(), initializer=Zeros(), trainable=True, dtype=np.float64):
         super().__init__(name)
         self.shape = shape
         self.initializer = initializer
