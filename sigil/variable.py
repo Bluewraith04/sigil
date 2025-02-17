@@ -18,3 +18,6 @@ class Variable(Node):
 
     def backward(self, upstream_gradient=1):
         self.grad += upstream_gradient
+
+    def zero_grad(self):
+        self.gradient = np.zeros_like(self.value, dtype=self.dtype)
