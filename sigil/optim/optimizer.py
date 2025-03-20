@@ -7,12 +7,12 @@ class Optimizer:
         self.states = {}
         self.variables = []
 
-    def register_vars(self, *vars):
+    def register_vars(self, *variables):
         """Initialize state for new variables."""
-        for var in vars:
-            if var not in self.state:
+        for var in variables:
+            if var not in self.states:
                 self.variables.append(var)
-                self._init_variable(var)
+                self._init_variable_state(var)
 
     @abstractmethod
     def _init_variable_state(self, var):

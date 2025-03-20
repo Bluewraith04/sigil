@@ -20,4 +20,4 @@ class Variable(Node):
         self.grad += upstream_gradient
 
     def zero_grad(self):
-        self.gradient = np.zeros_like(self.value, dtype=self.dtype)
+        self.grad = np.zeros_like(self.value, dtype=self.dtype)
