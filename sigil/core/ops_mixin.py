@@ -1,7 +1,7 @@
 from base import OperationRegistry
 
 
-class ArithmeticOpsMixin:
+class TensorOpsMixin:
     """Mixin to provide arithmetic operations via the OperationRegistry."""
 
     def __add__(self, other):
