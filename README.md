@@ -1,2 +1,2 @@
 # sigil
-A basic computational graph engine
+A basic computational graph library
